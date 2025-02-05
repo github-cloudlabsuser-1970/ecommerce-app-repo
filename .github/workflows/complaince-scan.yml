@@ -10,7 +10,7 @@ jobs:
     - name: Login to Azure
       uses: azure/login@v1
       with:
-        creds: ${{secrets.AZURE_CREDENTIALS}} 
+        creds: ${{secrets.SERVICEPRINCIPAL}} 
     
     - name: Check for resource compliance
       uses: azure/policy-compliance-scan@v0
